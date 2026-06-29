@@ -2,10 +2,120 @@
 
 <html lang="en">
     <head>
-        <title>Xavier's Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Xavier's Webpage</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #111;
+                color: white;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+            }
+
+            .hero {
+                width: 100%;
+                max-width: 1200px;
+                height: 650px;
+                background-image: 
+                    linear-gradient(
+                        rgba(0, 0, 0, 0.35),
+                        rgba(0, 0, 0, 0.45)
+                    ),
+                    url("bromo.jpg");
+
+                background-size: cover;
+                background-position: center;
+                border-radius: 35px;
+                overflow: hidden;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+            }
+
+            .hero-content {
+                background-color: rgba(0, 0, 0, 0.35);
+                padding: 40px 60px;
+                border-radius: 25px;
+                backdrop-filter: blur(6px);
+            }
+
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 15px;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 1.3rem;
+                color: #e6e6e6;
+            }
+
+            .button {
+                display: inline-block;
+                margin-top: 30px;
+                padding: 14px 28px;
+                border: 2px solid white;
+                border-radius: 30px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .button:hover {
+                background-color: white;
+                color: #111;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    padding: 20px;
+                }
+
+                .hero {
+                    height: 550px;
+                    border-radius: 25px;
+                }
+
+                .hero-content {
+                    padding: 30px;
+                }
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        </style>
     </head>
+
     <body>
-        <h1>Hello, everyone!</h1>
-        <p>This is my personal website.</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Webpage</h1>
+                <p>Hi, I’m Xavier — welcome to my personal corner of the internet.</p>
+                <a href="#" class="button">Explore More</a>
+            </div>
+        </section>
     </body>
 </html>
