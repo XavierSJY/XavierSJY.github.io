@@ -32,8 +32,8 @@
 
                 background-image:
                     linear-gradient(
-                        rgba(0, 0, 0, 0.35),
-                        rgba(0, 0, 0, 0.45)
+                        rgba(0, 0, 0, 0.15),
+                        rgba(0, 0, 0, 0.25)
                     ),
                     url("bromo.jpg");
 
@@ -44,28 +44,30 @@
 
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 text-align: center;
+
+                padding-top: 90px;
 
                 box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
             }
 
             .hero-content {
-                background-color: rgba(0, 0, 0, 0.35);
-                padding: 40px 60px;
-                border-radius: 25px;
-                backdrop-filter: blur(6px);
+                max-width: 900px;
+                padding: 20px;
             }
 
             h1 {
-                font-size: 4rem;
+                font-size: 4.2rem;
                 margin-bottom: 15px;
                 letter-spacing: 1px;
+                text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
             }
 
             p {
                 font-size: 1.3rem;
-                color: #e6e6e6;
+                color: #f0f0f0;
+                text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
             }
 
             .button {
@@ -78,11 +80,34 @@
                 text-decoration: none;
                 font-weight: bold;
                 transition: 0.3s;
+                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
             }
 
             .button:hover {
                 background-color: white;
                 color: #111;
+                text-shadow: none;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    padding: 20px;
+                }
+
+                .hero {
+                    height: 550px;
+                    border-radius: 25px;
+                    padding-top: 70px;
+                }
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
             }
         </style>
     </head>
@@ -91,7 +116,7 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Greetings!</h1>
-                <p>Hi! I'm Xavier — welcome to my personal corner of the internet.</p>
+                <p>I’m Xavier — welcome to my personal corner of the internet.</p>
                 <a href="#" class="button">Explore More</a>
             </div>
         </section>
